@@ -1,0 +1,9 @@
+{
+  "name": "common-js-module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@konradmi/npm-package": "1.0.0"
+  }
+}
