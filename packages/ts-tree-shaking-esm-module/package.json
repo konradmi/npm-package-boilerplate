@@ -1,0 +1,16 @@
+{
+  "name": "ts-tree-shaking-esm-module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && tsc -p ./tsconfig.json"
+  },
+  "dependencies": {
+    "@konradmi/npm-package": "1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
