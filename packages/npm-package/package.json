@@ -5,6 +5,7 @@
   "main": "./lib/cjs/index.js",
   "private": true,
   "repository": "git@github.com:konradmi/npm-package-boilerplate.git",
+  "sideEffects": false,
   "author": "Konrad Miekus <miekus.konrad@gmail.com>",
   "license": "MIT",
   "workspaces": [
@@ -17,7 +18,7 @@
     ".": {
       "import": {
         "types": "./lib/esm/types/index.d.ts",
-        "default": "./lib/esm/index.mjs"
+        "default": "./lib/esm/index.js"
       },
       "require": {
         "types": "./lib/cjs/types/index.d.ts",
@@ -27,8 +28,8 @@
   },
   "scripts": {
     "clean": "rm -rf ./lib",
-    "build": "npm run clean && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc -p ./tsconfig.esm.json && mv ./lib/esm/index.js ./lib/esm/index.mjs",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs && ./fixup",
+    "build:esm": "tsc -p ./tsconfig.esm.json",
     "build:cjs": "tsc -p ./tsconfig.cjs.json"
   },
   "devDependencies": {
