@@ -1,2 +1,2 @@
-export { browserFunction } from './browserFunction'
+export { log } from './logFunctions'
 export { add, multiply } from './mathFunctions'

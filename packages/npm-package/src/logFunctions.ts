@@ -1,6 +1,5 @@
-// the goal is to tree shake that in ts-tree-shaking-esm-module so that this package can be used on the server
+// the goal is to tree shake that in ts-tree-shaking-esm-module as it's not imported anywhere there
 
-console.log(document)
-export const browserFunction = () => {
-    (document as any).test = {}
+export const log = () => {
+  console.log('logging')
 }
