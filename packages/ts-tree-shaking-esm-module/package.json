@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf ./lib && rm -rf ./dist",
-    "build": "npm run clean && webpack"
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && webpack",
+    "exec": "node ./dist/bundle.js"
   },
   "dependencies": {
     "@konradmi/npm-package": "1.0.0"
