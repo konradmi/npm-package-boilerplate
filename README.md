@@ -1,4 +1,7 @@
 # npm-package-boilerplate
+
+TL;DR To run everything at once: `yarn run start`
+
 This repository contains 3 modules:
 
 - `npm-package` - it contains a TS side effects free code that gets compiled to a format that could be used as ESM and CommonJS modules. To build the package:
@@ -10,7 +13,7 @@ This repository contains 3 modules:
 
     `yarn run exec`
 
-    Note that in the output bundle there're the `logFunctions` module and the `multiply` method even though they are not used in the code
+    Note that in the output bundle there are the `logFunctions` module and the `multiply` method even though they are not used in the code
 
 - `ts-tree-shaking-esm-module` - it consumes `npm-package` as an ESM module. To build and execute the package:
 

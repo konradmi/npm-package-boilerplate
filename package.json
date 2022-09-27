@@ -6,6 +6,11 @@
   "repository": "git@github.com:konradmi/npm-package-boilerplate.git",
   "author": "Konrad Miekus <miekus.konrad@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "exec": "yarn workspace common-js-module run exec && yarn workspace ts-tree-shaking-esm-module run exec",
+    "start": "yarn && yarn run build && yarn run exec"
+  },
   "workspaces": [
     "packages/*"
   ]

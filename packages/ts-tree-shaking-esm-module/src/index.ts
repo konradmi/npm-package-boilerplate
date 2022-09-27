@@ -1,3 +1,3 @@
 import { add } from '@konradmi/npm-package'
 
-console.log(add(2,5))
+console.log('ts-tree-shaking-esm-module', add(2,5))
